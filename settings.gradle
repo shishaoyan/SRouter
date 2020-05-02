@@ -1,0 +1,8 @@
+rootProject.name='SRouter'
+include ':app'
+include ':srouter-annotation'
+include ':srouter-compiler'
+include ':srouter_api'
+include ':ft_login'
+include ':lib_base'
+include ':ft_music'

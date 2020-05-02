@@ -1,0 +1,18 @@
+apply plugin: 'java'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.google.auto.service:auto-service:1.0-rc6'
+    //特妹的仙人板板~~ 搞得什么飞机
+    annotationProcessor 'com.google.auto.service:auto-service:1.0-rc6'
+    implementation 'com.squareup:javapoet:1.8.0'
+
+    implementation 'org.apache.commons:commons-lang3:3.5'
+    implementation 'org.apache.commons:commons-collections4:4.1'
+    implementation project(path: ':srouter-annotation')
+    implementation 'com.alibaba:fastjson:1.2.59'
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"
